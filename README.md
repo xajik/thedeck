@@ -20,17 +20,35 @@ The primary goal of “The Deck” is to provide a user-friendly and cooperative
   <img src="demo/2.jpg" alt="alt text" style="max-width: 600px;">
 </p>
 
+## Gameplay 
+
+1. Select a game 📚
+2. Connect to the room 🔗
+3. Start game 🚀
+
+<table>
+  <tr>
+    <td><img src="demo/3.jpg" alt="Image 3" style="max-width: 400px;"></td>
+    <td><img src="demo/4.jpg" alt="Image 4" style="max-width: 400px;"></td>
+    <td><img src="demo/5.jpg" alt="Image 5" style="max-width: 400px;"></td>
+  </tr>
+</table>
+
 ## Read more 
 
 * <b> ⚙️ How it works 👀: </b> 
-    * [Game Night Just Got a Digital Upgrade: The Deck](https://igorsteblii.com/thedeck/)
     * [Dev.to](https://dev.to/ilbets/game-night-just-got-a-digital-upgrade-the-deck-67p)
     * [Medium](https://medium.com/@igorsteblii/game-night-just-got-a-digital-upgrade-the-deck-unique-cooperative-game-simulator-98e9db13c0f6)
     * PlantUML diagrams here - [/documentation](documentation)
 
+### Other 
 
+* [Personal blog: Game Night Just Got a Digital Upgrade: The Deck](https://igorsteblii.com/thedeck/)* 
 * [getthedeck.com](https://getthedeck.com/)
 * [ProductHunt](https://www.producthunt.com/products/the-deck#the-deck)
+* [Hacker News](https://news.ycombinator.com/item?id=42983699)
+* [Reddit](https://www.reddit.com/user/ilbets/comments/147hkbc/the_deck_game_night_just_got_a_digital_upgrade/)
+
 
 * 🍎 [AppStore](https://apps.apple.com/us/app/the-deck-play/id6448377728)
 * 🤖 [PlayStore](https://play.google.com/store/apps/details?id=com.thedeck.app)
