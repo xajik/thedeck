@@ -1,0 +1,18 @@
+name: thedeck_server_app
+version: 0.0.1
+description: HTTP implementation of the The Deck Server
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <=3.7.12"
+
+dependencies:
+  thedeck_server:
+    path: ../thedeck_server
+  thedeck_common:
+    path: ../thedeck_common
+  alfred: ^1.1.0+2
+
+dev_dependencies:
+  test: ^1.22.1

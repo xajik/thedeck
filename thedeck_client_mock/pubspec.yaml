@@ -1,0 +1,22 @@
+name: thedeck_client_mock
+description: A simple command-line application.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <=3.7.12"
+
+
+dependencies:
+  thedeck_common:
+    path: ../thedeck_common
+  thedeck_server:
+    path: ../thedeck_server
+  thedeck_client:
+    path: ../thedeck_client
+  ulid: ^2.0.0
+  synchronized: ^3.1.0
+
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.22.1

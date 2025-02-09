@@ -1,0 +1,123 @@
+@startuml
+title The Deck
+
+box "Game Server & Observer" #LightBlue
+
+actor The_Deck as A
+participant GameSocketServer
+participant GameSocketClient
+participant GameRoomBuilder
+participant GameParticipant
+participant GameRoomState
+
+end box
+
+actor Client_A as DA
+actor Client_B as DB
+
+== Game Server Created ==
+
+activate A
+
+activate GameSocketServer
+
+A -> GameSocketServer: Create Socket Server
+GameSocketServer --> A: Server
+
+activate GameSocketClient
+
+A -> GameSocketClient: Subscribe for Update
+GameSocketClient -> GameSocketServer: Subscribe for Update
+GameSocketServer --> GameSocketClient: subscribed
+GameSocketClient --> A: Observing updates
+
+== User A joins the room ==
+
+activate DA
+
+DA -> DA: Create GameSocketClient
+
+DA -> A: Join Game Room
+
+activate GameRoomBuilder
+
+A -> GameRoomBuilder: Verify Participant
+
+activate GameParticipant
+
+GameRoomBuilder -> GameParticipant: Add participant
+
+GameParticipant --> GameRoomBuilder: Added
+
+deactivate GameParticipant
+
+GameRoomBuilder --> A: Room is ready: NO
+
+deactivate GameRoomBuilder
+
+A --> DA: Joined Game Room
+
+deactivate DA
+
+== User B joins the room ==
+
+activate DB
+
+DB -> DB: Create GameSocketClient
+
+DB -> A: Join Game Room
+
+activate GameRoomBuilder
+
+A -> GameRoomBuilder: Verify Participant
+
+activate GameParticipant
+
+GameRoomBuilder -> GameParticipant: Add participant
+
+GameParticipant --> GameRoomBuilder: Added
+
+deactivate GameParticipant
+
+GameRoomBuilder --> A: Room is ready: YES
+
+deactivate GameRoomBuilder
+
+A --> DB: Joined Game Room
+
+deactivate DB
+
+== Game Server Starts the Game ==
+
+activate DA
+
+DA -> A: Start Game Room
+
+activate GameRoomBuilder
+
+A -> GameRoomBuilder: Create Room
+GameRoomBuilder --> A: Game Room
+
+deactivate GameRoomBuilder
+
+activate GameRoomState
+
+A -> GameRoomState: Store GameRoom
+
+GameRoomState --> A: Stored GameRoom
+
+deactivate GameRoomState
+
+A -> GameSocketServer: Send GameRoom
+
+GameSocketServer -> DA: GameRoom, Start Game
+DA -> DA: Store room, Start Game
+
+GameSocketServer -> DB: GameRoom, Start Game
+DB -> DB: Store room, Start Game
+
+GameSocketServer --> A: ACK
+
+
+
+@enduml

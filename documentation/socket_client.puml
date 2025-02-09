@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package Socket <<Node>> {
+
+    class SocketMessageStream {
+        + Stream<SocketMessage> stream;
+    }
+
+    class SocketClientUseCase {
+       + SocketMessageStream stream;
+    }
+
+    class AppSocketReceiverApi {
+      + SocketMessageStream stream;
+      parseMessage(SocketMessage message);
+    }
+
+}
+
+package Parser <<Node>> {
+
+    abstract class TicTacToeGameBoardMiddleware {
+      + TicTacToeGameBoard board();
+      + TicTacToeGameMove move();
+      + TicTacToeGameField field();
+     }
+}
+
+package State <<Node>> {
+    class Redux {
+        void updateState(AppState state);
+    }
+
+    class AppState {
+      + TicTacToeScreenState state;
+    }
+
+    class TicTacToeScreenState {
+        TicTacToeGameBoard board;
+    }
+}
+
+AppState *-- TicTacToeScreenState
+
+AppSocketReceiverApi o.. TicTacToeGameBoardMiddleware : Send message to Parser
+TicTacToeGameBoardMiddleware o.. Redux : Update Tic-Tac-Toe state
+Redux o.. AppState : Update Tic-Tac-Toe state
+
+SocketClientUseCase *-- SocketMessageStream
+SocketMessageStream *-- AppSocketReceiverApi
+
+package Game <<Node>> {
+
+    class TicTacToeGameBoard {
+        + TicTacToeGameMove moves
+        + TicTacToePlayer players
+        + TicTacToeGameField field
+    }
+
+}
+
+
+TicTacToeScreenState o.. TicTacToeGameBoard : Updates Tic-Tac-Toe state
+
+@enduml

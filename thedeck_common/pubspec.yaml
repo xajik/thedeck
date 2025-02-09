@@ -1,0 +1,17 @@
+name: thedeck_common
+version: 0.0.1
+description: The Deck Common Client Server dependencies
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <=3.7.12"
+
+exports:
+  - lib/the_deck_common.dart
+
+dependencies:
+  ulid: ^2.0.0
+
+dev_dependencies:
+  test: ^1.22.1

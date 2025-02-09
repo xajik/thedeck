@@ -1,0 +1,20 @@
+name: thedeck_client
+version: 0.0.1
+description: The Deck Socket Client dependencies
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <=3.7.12"
+
+exports:
+  - lib/the_deck_client.dart
+
+dependencies:
+  thedeck_common:
+    path: ../thedeck_common
+  ulid: ^2.0.0
+  socket_io_client: ^1.0.2
+
+dev_dependencies:
+  test: ^1.22.1

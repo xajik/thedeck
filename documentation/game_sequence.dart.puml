@@ -1,0 +1,42 @@
+@startuml
+title The Deck - State Flow
+
+box Device_A #LightBlue
+actor Client_A as DA
+participant GameSocketClient_A
+end box
+
+box Device_B #LightYellow
+actor Client_B as DB
+participant GameSocketClient_B
+end box
+
+box Server
+participant GameSocketServer
+participant GameRoom
+end box
+
+activate GameSocketClient_A
+activate GameSocketClient_B
+activate GameSocketServer
+
+DA -> GameSocketClient_A: Make Move
+
+GameSocketClient_A -> GameSocketServer: Send Move
+
+GameSocketServer -> GameRoom: Apply Move
+activate GameRoom
+
+GameRoom -> GameRoom: Apply Move
+GameRoom -> GameRoom: Update Field
+GameRoom -> GameSocketServer: New Game Field
+
+deactivate GameRoom
+
+GameSocketServer -> GameSocketClient_A: New Game Field
+GameSocketClient_A -> DA: Update UI
+
+GameSocketServer -> GameSocketClient_B: New Game Field
+GameSocketClient_B -> DB: Update UI
+
+@enduml

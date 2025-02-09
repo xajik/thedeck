@@ -1,0 +1,272 @@
+{
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "theDeck": "The Deck",
+  "games": "Games",
+  "availableGames": "Available games",
+  "createRoom": "Create the room",
+  "connectToRoom": "Connect to the room",
+  "joinToTheRoom": "Join to the room",
+  "loading": "Loading",
+  "dispose": "Dispose",
+  "connect": "Connect",
+  "cancel": "Cancel",
+  "scan": "Scan",
+  "roomId": "Enter room ID",
+  "start": "Start",
+  "cross": "Cross",
+  "zero": "Zero",
+  "winnerIs": "The winner is",
+  "ticTacToe": "Tic-Tac-Toe",
+  "doYouWantToConnect": "Do you want to connect to the {game} room?",
+  "@doYouWantToConnect": {
+    "placeholders": {
+      "game": {
+        "type": "String"
+      }
+    }
+  },
+  "hostIsDeck": "Host device is the deck",
+  "webGame": "Web Game",
+  "startTheGame": "Start {gameName} game",
+  "@startTheGame": {
+    "placeholders": {
+      "gameName": {
+        "type": "String"
+      }
+    }
+  },
+  "settings": "Settings",
+  "play": "Play",
+  "participants": "Participants",
+  "waitingForHost": "Waiting for the host to start the game",
+  "hi": "Hi, {name}!",
+  "@hi": {
+    "placeholders": {
+      "gameName": {
+        "type": "String"
+      }
+    }
+  },
+  "roomIsEmpty": "Room is empty",
+  "draw": "Draw",
+  "startGame": "Start game!",
+  "nextTurn": "Next turn: {player}",
+  "@nextTurn": {
+    "placeholders": {
+      "player": {
+        "type": "String"
+      }
+    }
+  },
+  "theWinnerIs": "The winner is {winner}!",
+  "@theWinnerIs": {
+    "placeholders": {
+      "winner": {
+        "type": "String"
+      }
+    }
+  },
+  "error": "Error",
+  "genericError": "Oops, something went wrong",
+  "close": "Close",
+  "yellow": "Yellow",
+  "red": "Red",
+  "connectingFour": "Connecting Four",
+  "connectFour": "Connect Four",
+  "disconnect": "Disconnect",
+  "scanCodeToConnect": "Scan the QR code to connect to the game room",
+  "dixit": "Dixit",
+  "vote": "Vote",
+  "guess": "Guess",
+  "select": "Select",
+  "tellStory": "Tell a story",
+  "score": "Score",
+  "leaderboard": "Leaderboard",
+  "youWon": "You won!",
+  "youLost": "You lost!",
+  "nextRound": "Next round",
+  "waitingForMove": "Waiting for {player} to move",
+  "@waitingForMove": {
+    "placeholders": {
+      "player": {
+        "type": "String"
+      }
+    }
+  },
+  "hand": "Hand",
+  "yourCards": "Your cards",
+  "waitingForAStory": "Waiting for the storyteller",
+  "gameOver": "Game over",
+  "roundIsOver": "Round is over",
+  "selectACard": "Select a card",
+  "playersSelectingCards": "Players selecting cards",
+  "voteForACard": "Vote for a card",
+  "playersVotingForCards": "Players voting for the cards",
+  "unknown": "Unknown",
+  "scoreToWin": "Score {score} to win",
+  "@scoreToWin": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "votes": "Votes",
+  "none": "None",
+  "userProfile": "User profile",
+  "save": "Save",
+  "name": "Name",
+  "nickname": "Nickname",
+  "photo": "Photo",
+  "link": "Link",
+  "hiYou": "Hi, @{name}!",
+  "@hiYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "avatar": "Avatar",
+  "email": "Email",
+  "yourScore": "Score {score}",
+  "@yourScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "yourRank": "Rank {rank}",
+  "@yourRank": {
+    "placeholders": {
+      "rank": {
+        "type": "String"
+      }
+    }
+  },
+  "beginner": "Beginner",
+  "novice": "Novice",
+  "amateur": "Amateur",
+  "semiPro": "Semi-Pro",
+  "pro": "Pro",
+  "elite": "Elite",
+  "legendary": "Legendary",
+  "master": "Master",
+  "grandMaster": "Grand Master",
+  "godlike": "Godlike",
+  "achievements": "Achievements",
+  "firstRun": "First run",
+  "welcome": "Welcome",
+  "firsWinAt": "First win at {game}",
+  "@firsWinAt": {
+    "placeholders": {
+      "game": {
+        "type": "String"
+      }
+    }
+  },
+  "firstGame": "First game",
+  "firstWin": "First win",
+  "firstWinAt": "First win {game}",
+  "@firstWinAt": {
+    "placeholders": {
+      "game": {
+        "type": "String"
+      }
+    }
+  },
+  "firstXGames": "First {count} games",
+  "@firstXGames": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "firstXWins": "First {count} wins",
+  "@firstXWins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "viewAll": "View all",
+  "moreGames": "More games",
+  "onlyAlphanumeric": "Alphanumeric characters only",
+  "nickNameExplained": "Nickname must be between 6 and 24 characters and contain only letters and numbers",
+  "pleaseEnterNickName": "Please, enter nickname",
+  "wrongInputValue": "Wrong input value",
+  "youJoinedGameRoom": "You joined {game} room",
+  "@youJoinedGameRoom": {
+    "placeholders": {
+      "game": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "yes",
+  "no": "no",
+  "areYouSureYouWantToLeave": "Are you sure you want to leave the game?",
+  "leaveGame": "Leave Game",
+  "helpConnect": "Resolve Connection",
+  "helpConnect1": "1. Make sure to turn on WIFI",
+  "helpConnect2": "2. All devices need to be connected to the same WIFI network",
+  "helpConnect3": "3. Scan QR code to connect to the Room",
+  "youWifi": "Your are connected to {wifi}",
+  "@youWifi": {
+    "placeholders": {
+      "wifi": {
+        "type": "String"
+      }
+    }
+  },
+  "connectToSameWifi": "Please, connect to the same WIFI as a game host",
+  "userPermission": "Permission required",
+  "localNetworkPermission": "To create or connect to game rooms, provide permission to access local network",
+  "iosLocalNetworkPermission": "iOS devices need to provide permission to access local network to connect to the game or connect to existing game",
+  "ok": "ok",
+  "wifiRequired": "WIFI Required",
+  "wifiRequiredWarning": "Please, connect to the wifi network",
+  "wifi": "WIFI",
+  "camera": "Camera",
+  "cameraPermission": "Camera permission is required",
+  "failedToConnectToRoom": "Failed to connect to the room",
+  "failedToCreateRoom": "Failed to create to the room",
+  "reconnect": "Reconnect",
+  "androidHotSpot": "Users with Android OS can create hotspot and connect to the game. iOS based devices that create hotspot access point cannot connect to the game.",
+  "makeSureYouAreConnected": "Make sure you are connected to the same network as other players",
+  "create": "Create",
+  "replay": "Replay",
+  "mafia": "Mafia",
+  "immunity": "Give immunity",
+  "jail": "Sent to jail",
+  "kill": "Kill",
+  "heal": "Heal",
+  "doAction": "Do action",
+  "hidden": "Hidden",
+  "yourRole": "Your role",
+  "detective": "Detective",
+  "doctor": "Doctor",
+  "lawyer": "Lawyer",
+  "citizen": "Citizen",
+  "nightPhaseDescription": "It is night in the city",
+  "nightSummaryPhaseDescription": "Good morning, night summary",
+  "dayPhaseDescription": "It is day in the city",
+  "daySummaryPhaseDescription": "Good evening, day summary",
+  "youAreDead": "You are dead",
+  "moveOn": "Move on",
+  "asOneMoreNightPass": "As one more night pass, the city wakes up to find out that ",
+  "alive": "Alive",
+  "dead": "Dead",
+  "goToTheNextRound": "Next round",
+  "voteAgain": "Vote again",
+  "noOneWasEliminated": "No one was eliminated, citizen need to vote again",
+  "wasEliminated": "was eliminated",
+  "votesFor": "votes for",
+  "citizensVoted": "Citizens voted"
+}

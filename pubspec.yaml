@@ -1,0 +1,95 @@
+name: the_deck
+description: The Deck - mobile card games
+
+publish_to: 'none'
+
+version: 0.9.30+30
+
+environment:
+  sdk: ">=2.19.0 <=3.7.12"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  thedeck_common:
+    path: thedeck_common
+  thedeck_server:
+    path: thedeck_server
+  thedeck_client:
+    path: thedeck_client
+  cupertino_icons: ^1.0.2
+  path_provider: ^2.0.11
+  path: ^1.8.2
+  flutter_redux: ^0.10.0
+  redux: ^5.0.0
+  redux_thunk: ^0.4.0
+  provider: ^6.0.5
+  connectivity_plus: ^4.0.1
+  dio: ^4.0.6
+  objectbox: ^1.7.0
+  objectbox_flutter_libs: any
+  shared_preferences: ^2.0.15
+  device_info_plus: ^8.0.0
+  package_info_plus: ^3.0.2
+  webview_flutter: ^4.0.1
+  socket_io_client: ^1.0.2
+  socket_io: ^1.0.1
+  qr_flutter: ^4.0.0
+  mobile_scanner: ^2.1.0
+  network_info_plus: ^3.0.1
+  ulid: ^2.0.0
+  carousel_slider: ^4.2.1
+  cached_network_image: ^3.2.3
+  flutter_local_notifications: ^12.0.4
+  # firebase_core: ^2.11.0
+  # firebase_analytics: ^10.3.0
+  # firebase_crashlytics: ^3.2.0
+  # firebase_messaging: ^14.5.0
+  photo_view: ^0.14.0
+  dpad_container: ^2.0.3
+  permission_handler: ^10.2.0
+
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  change_app_package_name: ^1.1.0 # flutter pub run change_app_package_name:main com.thedeck.app
+  flutter_launcher_icons: ^0.11.0
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.3 # fvm flutter pub run build_runner build
+  objectbox_generator: any # flutter pub run build_runner build - to build new entities
+  test: ^1.22.1
+
+dependency_overrides:
+  test_api: ^0.4.17
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/
+    - assets/image/
+    - assets/image/default_avatar.png
+    - assets/image/default_user.png
+    - assets/image/achievement/
+    - assets/image/achievement/first_run.png
+    - assets/image/achievement/first_game.png
+    - assets/image/achievement/first_tic_tac_toe.png
+    - assets/image/achievement/first_dixit.png
+    - assets/image/achievement/first_connect_four.png
+    - assets/image/game/
+    - assets/image/game/dixit.png
+    - assets/image/game/tic_tac_toe.png
+    - assets/image/game/connect_four.png
+    - assets/image/game/placeholder.png
+    - assets/image/cards/
+    - assets/image/cards/back.jpg
+
+flutter_icons: #Use: fvm flutter pub run flutter_launcher_icons
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/icon.jpg"
+  min_sdk_android: 21

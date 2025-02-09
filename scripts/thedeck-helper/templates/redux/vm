@@ -1,0 +1,13 @@
+{header}
+
+import 'package:redux/redux.dart';
+
+class {class_prefix}ViewModel {{
+
+  {class_prefix}ViewModel();
+
+  factory {class_prefix}ViewModel.create(Store<AppState> store) {{
+    return {class_prefix}ViewModel();
+  }}
+
+}}

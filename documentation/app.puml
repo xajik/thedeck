@@ -1,0 +1,62 @@
+@startmindmap
+'https://plantuml.com/mindmap-diagram
+<style>
+mindmapDiagram {
+    .green {
+        BackgroundColor lightgreen
+    }
+    .rose {
+        BackgroundColor #FFBBCC
+    }
+    .blue {
+        BackgroundColor lightblue
+    }
+    .purple {
+        BackgroundColor #CBC3E3
+    }
+    .orange{
+        BackgroundColor #FFCBA4
+    }
+}
+</style>
+
++ <&people>Game Host
+
+++ AppState <<blue>>
++++ RoomCreateState <<blue>>
+++++ GameDetails <<purple>>
+++++ GameRoom <<purple>>
++++ TicTacToeScreenState <<blue>>
+
+++ Socket Server <<rose>>
++++ Socket Server API <<rose>>
+
+++ GameRoom <<purple>>
++++ GameParticipants <<purple>>
++++ GameDetails <<purple>>
++++ GameBoard <<purple>>
+++++ GameField <<purple>>
+++++ GamePlayers <<purple>>
+++++ GameMoves <<purple>>
+
+++ TicTacToeScreenWidget <<orange>>
+
+-- <&people>Game Guest
+
+--- Socket Client <<rose>>
+---- Socket Client API <<rose>>
+
+--- AppState <<blue>>
+---- RoomConnectState <<blue>>
+----- GameDetails <<purple>>
+
+---- TicTacToeScreenState <<blue>>
+----- GameField <<purple>>
+
+--- TicTacToeScreenWidget <<orange>>
+
+header
+The Deck - Min Map
+endheader
+
+@endmindmap

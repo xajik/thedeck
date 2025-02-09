@@ -1,0 +1,10 @@
+{header}
+
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+class {class_prefix}Localisation {{
+  final AppLocalizations localizations;
+
+  {class_prefix}Localisation(this.localizations);
+
+}}

@@ -1,0 +1,248 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:2971499759231814811",
+      "lastPropertyId": "11:4264077402974354651",
+      "name": "UserEntity",
+      "properties": [
+        {
+          "id": "1:806164187249739735",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1414252293429827922",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:936450652288157961",
+          "name": "surname",
+          "type": 9
+        },
+        {
+          "id": "4:4195814157608645452",
+          "name": "nickName",
+          "type": 9
+        },
+        {
+          "id": "5:7974623385148595298",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "7:5759214957081987206",
+          "name": "updated",
+          "type": 10
+        },
+        {
+          "id": "8:3064488436745788378",
+          "name": "userRemoteKey",
+          "type": 9
+        },
+        {
+          "id": "9:1842376799067188190",
+          "name": "userLocalKey",
+          "type": 9
+        },
+        {
+          "id": "10:902625108436591483",
+          "name": "image",
+          "type": 9
+        },
+        {
+          "id": "11:4264077402974354651",
+          "name": "score",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7012495604668509722",
+      "lastPropertyId": "7:5966321094423509408",
+      "name": "UserProfileEntity",
+      "properties": [
+        {
+          "id": "1:3084984970029496246",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1654517955570798306",
+          "name": "userId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "1:4174050621433166601"
+        },
+        {
+          "id": "3:8168921035534973434",
+          "name": "nickName",
+          "type": 9
+        },
+        {
+          "id": "4:5389645648747231853",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "5:3268762797035526109",
+          "name": "image",
+          "type": 9
+        },
+        {
+          "id": "6:7658235650073101981",
+          "name": "updated",
+          "type": 10
+        },
+        {
+          "id": "7:5966321094423509408",
+          "name": "score",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6899988182276196759",
+      "lastPropertyId": "6:4026731168835925558",
+      "name": "AssetsEntity",
+      "properties": [
+        {
+          "id": "1:8351528311247939074",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4379484846518935116",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": "3:7607058416463315003",
+          "name": "localPath",
+          "type": 9
+        },
+        {
+          "id": "4:4793077235619706955",
+          "name": "url",
+          "type": 9
+        },
+        {
+          "id": "5:5513736493495895375",
+          "name": "eTag",
+          "type": 9
+        },
+        {
+          "id": "6:4026731168835925558",
+          "name": "updated",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:5658520941658207305",
+      "lastPropertyId": "10:5885313803383010410",
+      "name": "GameLogEntity",
+      "properties": [
+        {
+          "id": "1:2768181147771517432",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8339253153668734173",
+          "name": "roomId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "2:1272564046440997116"
+        },
+        {
+          "id": "3:1703763458161648635",
+          "name": "gameId",
+          "type": 6
+        },
+        {
+          "id": "5:5780520129575914771",
+          "name": "winnerUserId",
+          "type": 9
+        },
+        {
+          "id": "6:1214058864440579514",
+          "name": "logPath",
+          "type": 9
+        },
+        {
+          "id": "7:604438751680354784",
+          "name": "updated",
+          "type": 10
+        },
+        {
+          "id": "8:6862436486593354581",
+          "name": "address",
+          "type": 9
+        },
+        {
+          "id": "10:5885313803383010410",
+          "name": "gameState",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:6239229936117526584",
+      "lastPropertyId": "4:2586078809352040367",
+      "name": "KeyValueEntity",
+      "properties": [
+        {
+          "id": "1:3671346626924144443",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4895310943288160404",
+          "name": "key",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "3:2444752632164483106"
+        },
+        {
+          "id": "3:7812012529702498585",
+          "name": "value",
+          "type": 9
+        },
+        {
+          "id": "4:2586078809352040367",
+          "name": "updated",
+          "type": 10
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:6239229936117526584",
+  "lastIndexId": "3:2444752632164483106",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    2819621592953330850,
+    1742026850115390199,
+    8970642293357528401
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

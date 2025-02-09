@@ -1,0 +1,35 @@
+{header}
+
+import 'package:flutter/material.dart';
+import 'package:redux/redux.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:the_deck/utils/context_extension.dart';
+
+import '{file_prefix}_view_model.dart';
+import '{file_prefix}_localisation.dart';
+
+class {class_prefix}ScreenWidget extends StatelessWidget {{
+  static const route = '/{file_prefix}';
+
+  const {class_prefix}ScreenWidget({{Key? key}}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {{
+    return StoreConnector<AppState, {class_prefix}ViewModel>(
+      converter: (Store<AppState> store) => {class_prefix}ViewModel.create(store),
+      builder: (BuildContext context, {class_prefix}ViewModel vm) {{
+        final TextTheme textTheme = context.textTheme();
+        final {class_prefix}Localisation locale = {class_prefix}Localisation(context.appLocalizations());
+        return Scaffold(
+          extendBody: true,
+          resizeToAvoidBottomInset: false,
+          body: Scaffold(
+            body: SafeArea(
+              child: Container(),
+            ),
+          ),
+        );
+      }},
+    );
+  }}
+}}

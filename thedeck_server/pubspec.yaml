@@ -1,0 +1,20 @@
+name: thedeck_server
+version: 0.0.1
+description: The Deck -server dependencies
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <=3.7.12"
+
+exports:
+  - lib/the_deck_server.dart
+
+dependencies:
+  thedeck_common:
+    path: ../thedeck_common
+  ulid: ^2.0.0
+  socket_io: ^1.0.1
+
+dev_dependencies:
+  test: ^1.22.1

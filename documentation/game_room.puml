@@ -1,0 +1,76 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class GameRoom {
+   + String roomId;
+   + List<GameParticipant> participants
+   + GameBoard board
+   + GameDetails details
+}
+
+class GameDetails {
+  + int gameId;
+  + String gameName;
+}
+
+abstract class GameBoard {
+  + List<GameMove<Y>> moves;
+  + GameField<T> gameField;
+  + List<Player<R>> players;
+ }
+
+ abstract class GameMove {
+     + String ulid;
+     + String userId;
+  }
+
+ abstract class Player {
+    + String userId;
+ }
+
+ abstract class GameField {
+    + isGameOver = false;
+ }
+
+abstract class GameParticipant {
+  + String userId;
+  + String sessionId;
+  + bool isHost;
+  + ParticipantProfile profile;
+}
+abstract class ParticipantProfile {
+  + String nickname;
+  + String avatarUrl;
+}
+
+
+GameRoom *-- GameParticipant
+GameRoom *-- GameBoard
+GameRoom *-- GameDetails
+
+GameParticipant *-- ParticipantProfile
+
+GameBoard *-- GameMove
+GameBoard *-- Player
+GameBoard *-- GameField
+
+'
+'class TicTacToeGameBoard{
+'+ TicTacToeGameMove moves
+'+ TicTacToePlayer players
+'+ TicTacToeGameField field
+'}
+'class TicTacToeGameMove
+'class TicTacToePlayer
+'class TicTacToeGameField
+'
+'GameRoom <|-- TicTacToeGameBoard
+'GameMove <|-- TicTacToeGameMove
+'Player <|-- TicTacToePlayer
+'GameField <|-- TicTacToeGameField
+'
+'TicTacToeGameBoard *-- TicTacToeGameField
+'TicTacToeGameBoard *-- TicTacToePlayer
+'TicTacToeGameBoard *-- TicTacToeGameMove
+
+@enduml
